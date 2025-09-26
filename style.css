@@ -1,0 +1,21 @@
+header {
+    padding: 50px;
+    background-color: cornflowerblue;
+    text-align: center;
+    color: white;
+
+}
+
+main {
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+
+h2 {
+    background-color: aquamarine;
+}
+
+p {
+    font-size: 1.2rem;
+}
