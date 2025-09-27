@@ -1,5 +1,5 @@
 header {
-    padding: 50px;
+    padding: 30px;
     background-color: cornflowerblue;
     text-align: center;
     color: white;
@@ -13,19 +13,33 @@ main {
 }
 
 h2 {
-    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px 20px;
+    margin: 0;
+    z-index: 10;
 }
 
 p {
     font-size: 1.2rem;
+    padding: 10px;
 }
+
+.chapter-section {
+    padding: 0;
+    margin-bottom: 5px;
+    background-color: #f7f7f7;
+}
+
 
 .demo {
     display: flex;
 
 }
 
-.card { 
+.card {
     width: 100%;
     padding: 10px;
 }
@@ -39,6 +53,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 20px;
 }
 
 .image-grid {
@@ -55,11 +70,14 @@ p {
     }
 
     .content-paragraph {
-        flex: 0 0 40%; 
+        position: sticky;
+        top: 70px;
+        margin: 0;
+        flex: 0 0 40%;
         padding-right: 15px;
     }
 
     .image-grid {
-        flex: 1 1 60%; 
+        flex: 1 1 60%;
     }
 }
