@@ -22,11 +22,44 @@ p {
 
 .demo {
     display: flex;
-    
+
 }
 
-.card, .demogif {
-    width: auto;
-    height: 300px;
+.card { 
+    width: 100%;
     padding: 10px;
+}
+
+.demogif {
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+
+@media (min-width: 700px) {
+    .wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .content-paragraph {
+        flex: 0 0 40%; 
+        padding-right: 15px;
+    }
+
+    .image-grid {
+        flex: 1 1 60%; 
+    }
 }
